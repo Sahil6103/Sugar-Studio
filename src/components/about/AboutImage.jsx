@@ -9,26 +9,26 @@ export const AboutImage = () => {
   const sectionRef = useRef();
   const imgRef = useRef();
 
-  // useLayoutEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: sectionRef.current,
-  //         start: "top 80%",
-  //         end: "top 50%",
-  //         scrub: 5,
-  //         markers: true,
-  //       },
-  //     });
-  //     tl.fromTo(
-  //       imgRef.current,
-  //       { scale: 0, opacity: 0 },
-  //       { scale: 1, opacity: 1, duration: 0.7 }
-  //     );
-  //   });
-  //
-  // return () => ctx.revert();
-  // });
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "top 50%",
+          scrub: 5,
+          markers: true,
+        },
+      });
+      tl.fromTo(
+        imgRef.current,
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.7 }
+      );
+    });
+
+    return () => ctx.revert();
+  });
 
   return (
     <section ref={sectionRef} className="about px-3 md:px-10 lg:px-20">

@@ -20,23 +20,23 @@ export const Marquee = () => {
     };
   });
 
-  // useEffect(() => {
-  //   const marquee = marqueeRef.current;
-  //   const items = itemsRef.current;
+  useEffect(() => {
+    const marquee = marqueeRef.current;
+    const items = itemsRef.current;
 
-  //   gsap.set(items, { xPercent: 100 });
+    gsap.set(items, { xPercent: 100 });
 
-  //   const tl = gsap.timeline({ repeat: -1, ease: "none" });
-  //   tl.to(items, {
-  //     xPercent: -100 * items.length,
-  //     duration: duration,
-  //     ease: "none",
-  //   });
+    const tl = gsap.timeline({ repeat: -1, ease: "none" });
+    tl.to(items, {
+      xPercent: -100 * items.length,
+      duration: duration,
+      ease: "none",
+    });
 
-  //   return () => {
-  //     tl.kill();
-  //   };
-  // }, [duration]);
+    return () => {
+      tl.kill();
+    };
+  }, [duration]);
 
   return (
     <div className="page2 h-fit w-full overflow-hidden">

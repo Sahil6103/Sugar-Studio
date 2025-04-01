@@ -19,82 +19,82 @@ export function Philosophy() {
   const paragraph2Ref = useRef();
   const paragraph3Ref = useRef();
 
-  // useLayoutEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: sectionRef.current,
-  //         start: "top 80%",
-  //         end: "top 50%",
-  //         scrub: 5,
-  //         markers: true,
-  //       },
-  //     });
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "top 50%",
+          scrub: 5,
+          markers: true,
+        },
+      });
 
-  //     tl.fromTo(
-  //       lineRef.current,
-  //       { x: -20, opacity: 0 },
-  //       { x: 0, opacity: 1, duration: 0.3 }
-  //     )
-  //       .fromTo(
-  //         textRef.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 }
-  //       )
-  //       .fromTo(
-  //         img1Ref.current,
-  //         { x: -20, opacity: 0 },
-  //         { x: 0, opacity: 1, duration: 0.3 }
-  //       )
-  //       .fromTo(
-  //         span1Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       )
-  //       .fromTo(
-  //         paragraph1Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       )
-  //       .fromTo(
-  //         img2Ref.current,
-  //         { x: -20, opacity: 0 },
-  //         { x: 0, opacity: 1, duration: 0.3 }
-  //       )
-  //       .fromTo(
-  //         span2Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       )
-  //       .fromTo(
-  //         paragraph2Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       )
-  //       .fromTo(
-  //         img3Ref.current,
-  //         { x: -20, opacity: 0 },
-  //         { x: 0, opacity: 1, duration: 0.3 }
-  //       )
-  //       .fromTo(
-  //         span3Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       )
-  //       .fromTo(
-  //         paragraph3Ref.current,
-  //         { y: 20, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 0.3 },
-  //         "-=0.2"
-  //       );
-  //   });
-  //   return () => ctx.revert();
-  // });
+      tl.fromTo(
+        lineRef.current,
+        { x: -20, opacity: 0 },
+        { x: 0, opacity: 1, duration: 0.3 }
+      )
+        .fromTo(
+          textRef.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 }
+        )
+        .fromTo(
+          img1Ref.current,
+          { x: -20, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.3 }
+        )
+        .fromTo(
+          span1Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        )
+        .fromTo(
+          paragraph1Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        )
+        .fromTo(
+          img2Ref.current,
+          { x: -20, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.3 }
+        )
+        .fromTo(
+          span2Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        )
+        .fromTo(
+          paragraph2Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        )
+        .fromTo(
+          img3Ref.current,
+          { x: -20, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.3 }
+        )
+        .fromTo(
+          span3Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        )
+        .fromTo(
+          paragraph3Ref.current,
+          { y: 20, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.3 },
+          "-=0.2"
+        );
+    });
+    return () => ctx.revert();
+  });
 
   const text = "Our Philosophy";
   return (

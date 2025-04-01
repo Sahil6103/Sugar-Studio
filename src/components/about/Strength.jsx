@@ -11,28 +11,28 @@ export const Strength = () => {
   const firstRef = useRef();
   const secondRef = useRef();
 
-  //   useLayoutEffect(() => {
-  //     const ctx = gsap.context(() => {
-  //       const tl = gsap.timeline({
-  //         scrollTrigger: {
-  //           trigger: sectionRef.current,
-  //           start: "top 80%",
-  //           end: "top 50%",
-  //           scrub: 5,
-  //         },
-  //       });
-  //       tl.fromTo(
-  //         firstRef.current,
-  //         { scale: 0, opacity: 0 },
-  //         { scale: 1, opacity: 1, duration: 0.5 }
-  //       ).fromTo(
-  //         secondRef.current,
-  //         { scale: 0, opacity: 0 },
-  //         { scale: 1, opacity: 1, duration: 0.5 },
-  //         "-=0.2"
-  //       );
-  //     });
-  //   });
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 80%",
+          end: "top 50%",
+          scrub: 5,
+        },
+      });
+      tl.fromTo(
+        firstRef.current,
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5 }
+      ).fromTo(
+        secondRef.current,
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 0.5 },
+        "-=0.2"
+      );
+    });
+  });
 
   return (
     <section

@@ -14,55 +14,55 @@ export const About = () => {
   const buttonRef = useRef();
   const lineRef = useRef();
 
-  // useLayoutEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline({
-  //       scrollTrigger: {
-  //         trigger: sectionRef.current,
-  //         start: "top 40%", // Start animation slightly later
-  //         end: "top 10%",
-  //         scrub: 5, // Slower scroll interaction
-  //       },
-  //     });
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 40%", // Start animation slightly later
+          end: "top 10%",
+          scrub: 5, // Slower scroll interaction
+        },
+      });
 
-  //     tl.fromTo(
-  //       imgRef.current,
-  //       { scale: 0 },
-  //       { scale: 1, duration: 3, ease: "power4.out" }
-  //     )
-  //       .fromTo(
-  //         contentRef.current,
-  //         { scale: 0 },
-  //         { scale: 1, duration: 3, ease: "power4.out" },
-  //         "-=1.5" // Overlap animations slightly
-  //       )
-  //       .fromTo(
-  //         lineRef.current,
-  //         { x: -20, opacity: 0 },
-  //         { x: 0, opacity: 1, duration: 3, ease: "power4.out" }
-  //       )
-  //       .fromTo(
-  //         headingRef.current,
-  //         { y: 50, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 3, ease: "power3.out" },
-  //         "-=1.2"
-  //       )
-  //       .fromTo(
-  //         paragraphRef.current,
-  //         { x: -50, opacity: 0 },
-  //         { x: 0, opacity: 1, duration: 3, ease: "power3.out" },
-  //         "-=2"
-  //       )
-  //       .fromTo(
-  //         buttonRef.current,
-  //         { y: 30, opacity: 0 },
-  //         { y: 0, opacity: 1, duration: 3, ease: "power3.out" },
-  //         "-=2"
-  //       );
-  //   });
+      tl.fromTo(
+        imgRef.current,
+        { scale: 0 },
+        { scale: 1, duration: 3, ease: "power4.out" }
+      )
+        .fromTo(
+          contentRef.current,
+          { scale: 0 },
+          { scale: 1, duration: 3, ease: "power4.out" },
+          "-=1.5" // Overlap animations slightly
+        )
+        .fromTo(
+          lineRef.current,
+          { x: -20, opacity: 0 },
+          { x: 0, opacity: 1, duration: 3, ease: "power4.out" }
+        )
+        .fromTo(
+          headingRef.current,
+          { y: 50, opacity: 0 },
+          { y: 0, opacity: 1, duration: 3, ease: "power3.out" },
+          "-=1.2"
+        )
+        .fromTo(
+          paragraphRef.current,
+          { x: -50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 3, ease: "power3.out" },
+          "-=2"
+        )
+        .fromTo(
+          buttonRef.current,
+          { y: 30, opacity: 0 },
+          { y: 0, opacity: 1, duration: 3, ease: "power3.out" },
+          "-=2"
+        );
+    });
 
-  //   return () => ctx.revert(); // Cleanup on unmount
-  // }, []);
+    return () => ctx.revert(); // Cleanup on unmount
+  }, []);
 
   return (
     <section

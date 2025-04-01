@@ -33,20 +33,20 @@ const Hero = () => {
   const textRef = useRef([]);
   const heroModel = useRef();
 
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline();
-  //     tl.set(textRef.current, { y: 20, opacity: 0 })
-  //       .set(heroModel.current, {
-  //         y: -20,
-  //         opacity: 0,
-  //       })
-  //       .to(textRef.current, { y: 0, opacity: 1, duration: 0.2, stagger: 0.1 })
-  //       .to(heroModel.current, { opacity: 1, duration: 0.3 }, "-=0.5");
-  //   }, hero);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+      tl.set(textRef.current, { y: 20, opacity: 0 })
+        .set(heroModel.current, {
+          y: -20,
+          opacity: 0,
+        })
+        .to(textRef.current, { y: 0, opacity: 1, duration: 0.2, stagger: 0.1 })
+        .to(heroModel.current, { opacity: 1, duration: 0.3 }, "-=0.5");
+    }, hero);
 
-  //   return () => ctx.revert();
-  // }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section

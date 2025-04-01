@@ -16,38 +16,38 @@ export const Header = () => {
 
   const tl = useRef();
 
-  // useEffect(() => {
-  //   const headerTl = gsap.timeline();
-  //   headerTl.current = gsap.timeline();
+  useEffect(() => {
+    const headerTl = gsap.timeline();
+    headerTl.current = gsap.timeline();
 
-  //   headerTl.current
-  //     .set(logo.current, { y: -30, opacity: 0 })
-  //     .set(linksRef.current, { y: -30, opacity: 0 })
-  //     .to(logo.current, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 0.5,
-  //       delay: 0.2,
-  //     })
-  //     .to(linksRef.current, {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 0.5,
-  //       delay: 0.2,
-  //       stagger: 0.2,
-  //     })
-  //     .fromTo(menuIcon.current, { opacity: 0 }, { opacity: 1, duration: 0.3 });
-  // }, []);
+    headerTl.current
+      .set(logo.current, { y: -30, opacity: 0 })
+      .set(linksRef.current, { y: -30, opacity: 0 })
+      .to(logo.current, {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        delay: 0.2,
+      })
+      .to(linksRef.current, {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        delay: 0.2,
+        stagger: 0.2,
+      })
+      .fromTo(menuIcon.current, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+  }, []);
 
   useEffect(() => {
     const headerTl = gsap.timeline();
     headerTl.current = gsap.timeline();
 
-    // headerTl.current
-    //   .set(linksRef.current, { y: -30, opacity: 0 })
-    //   .set(logo.current, { y: -30, opacity: 0 })
-    //   .to(logo.current, { y: 0, opacity: 1, duration: 0.5 })
-    //   .to(linksRef.current, { y: 0, opacity: 1, duration: 0.3, stagger: 0.2 });
+    headerTl.current
+      .set(linksRef.current, { y: -30, opacity: 0 })
+      .set(logo.current, { y: -30, opacity: 0 })
+      .to(logo.current, { y: 0, opacity: 1, duration: 0.5 })
+      .to(linksRef.current, { y: 0, opacity: 1, duration: 0.3, stagger: 0.2 });
   });
 
   useEffect(() => {

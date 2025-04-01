@@ -10,33 +10,33 @@ export const AboutHeading = () => {
 
   const text1 = "Designing with Purpose, Creating with Passion.";
 
-  // useEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     const tl = gsap.timeline();
-  //     tl.set(lineRef.current, { x: -20, opacity: 0 })
-  //       .set(text1Ref.current, {
-  //         y: 10,
-  //         opacity: 0,
-  //       })
-  //       .set(paragraphRef1.current, { y: 10, opacity: 0 })
-  //       .set(paragraphRef2.current, { y: 10, opacity: 0 })
-  //       .to(lineRef.current, { x: 0, opacity: 1, duration: 0.3 })
-  //       .to(text1Ref.current, {
-  //         y: 0,
-  //         opacity: 1,
-  //         duration: 0.2,
-  //         stagger: 0.03,
-  //       })
-  //       .to(paragraphRef1.current, { y: 0, opacity: 1, duration: 0.2 }, "-=0.5")
-  //       .to(
-  //         paragraphRef2.current,
-  //         { y: 0, opacity: 1, duration: 0.2 },
-  //         "-=0.3"
-  //       );
-  //   }, sectionRef);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+      tl.set(lineRef.current, { x: -20, opacity: 0 })
+        .set(text1Ref.current, {
+          y: 10,
+          opacity: 0,
+        })
+        .set(paragraphRef1.current, { y: 10, opacity: 0 })
+        .set(paragraphRef2.current, { y: 10, opacity: 0 })
+        .to(lineRef.current, { x: 0, opacity: 1, duration: 0.3 })
+        .to(text1Ref.current, {
+          y: 0,
+          opacity: 1,
+          duration: 0.2,
+          stagger: 0.03,
+        })
+        .to(paragraphRef1.current, { y: 0, opacity: 1, duration: 0.2 }, "-=0.5")
+        .to(
+          paragraphRef2.current,
+          { y: 0, opacity: 1, duration: 0.2 },
+          "-=0.3"
+        );
+    }, sectionRef);
 
-  //   return () => ctx.revert();
-  // }, []);
+    return () => ctx.revert();
+  }, []);
 
   return (
     <section ref={sectionRef} className="about px-3 md:px-10 lg:px-20 flex">
