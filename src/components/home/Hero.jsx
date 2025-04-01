@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const Model = () => {
-  const { scene } = useGLTF("src/assets/imgs/sofa.glb");
+  const { scene } = useGLTF("/models/sofa.glb");
   const [scale, setScale] = useState(2); // Default scale
 
   // Update scale based on screen size
