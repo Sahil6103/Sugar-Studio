@@ -1,4 +1,5 @@
-import React from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 
 export const AboutHeading = () => {
   const sectionRef = useRef();
@@ -79,7 +80,7 @@ export const AboutHeading = () => {
           </p>
         </div>
       </div>
-      <LineArt />
+      {/* <LineArt /> */}
     </section>
   );
 };

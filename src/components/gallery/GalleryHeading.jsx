@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 export const GalleryHeading = () => {
   const sectionRef = useRef();
@@ -7,7 +7,7 @@ export const GalleryHeading = () => {
   const paragraphRef1 = useRef();
   const paragraphRef2 = useRef();
 
-  const text1 = "Designing with Purpose, Creating with Passion.";
+  const text1 = "A Showcase of Vision & Excellence";
 
   // useEffect(() => {
   //   const ctx = gsap.context(() => {
@@ -62,24 +62,7 @@ export const GalleryHeading = () => {
             ))}
           </h1>
         </div>
-        <div className="paragraph font-paragraph text-sm flex flex-col gap-5 w-full md:w-[70%]">
-          <p ref={paragraphRef1}>
-            At Sugar Studio, every design is more than just a visual—it’s an
-            experience. We believe that great design is not just about form and
-            function but about storytelling, emotion, and intention. Every
-            curve, every shadow, and every detail is crafted with purpose,
-            ensuring that what we create is not just beautiful but meaningful.
-          </p>
-          <p ref={paragraphRef2}>
-            Passion fuels our creativity, pushing us to explore new dimensions
-            in 3D visuals, line art, and modern aesthetics. Whether it’s a
-            striking furniture concept, a minimalist sketch, or a fully
-            immersive design experience, we bring ideas to life with an
-            unwavering commitment to excellence.
-          </p>
-        </div>
       </div>
-      <LineArt />
     </section>
   );
 };
