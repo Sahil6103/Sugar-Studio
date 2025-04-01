@@ -27,7 +27,6 @@ export function Philosophy() {
           start: "top 80%",
           end: "top 50%",
           scrub: 5,
-          markers: true,
         },
       });
 

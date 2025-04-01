@@ -109,7 +109,7 @@ export const Header = () => {
       {/* mobile Navigation Menu */}
       <nav
         ref={mobNavRef}
-        className="fixed md:fixed lg:stick text-black w-full h-screen top-0 right-0 translate-y-full py-32 md:px-20 text-center flex flex-col justify-center items-center lg:justify-start lg:items-start gap-10 bg-[#ffffff82] backdrop-blur-md z-[90] text-lg md:text-xl tracking-wide overflow-hidden">
+        className="fixed md:fixed lg:stick text-black w-full h-screen top-0 right-0 translate-y-full py-32 md:px-20 text-center flex flex-col justify-center items-center lg:justify-start lg:items-start gap-10 bg-[#7b7b7b3e] backdrop-blur-lg z-[90] text-lg md:text-xl tracking-wide overflow-hidden">
         <Link
           to="/about-us"
           ref={(el) => (mobLinksRef.current[0] = el)}
@@ -130,13 +130,6 @@ export const Header = () => {
           onClick={() => setIsOpen(false)}
           className="">
           Gallery
-        </Link>
-        <Link
-          to="/gallery"
-          ref={(el) => (mobLinksRef.current[3] = el)}
-          onClick={() => setIsOpen(false)}
-          className="">
-          3D View
         </Link>
         <Link
           to="/contact-us"
@@ -170,13 +163,6 @@ export const Header = () => {
           onClick={() => setIsOpen(false)}
           className="text-black">
           Gallery
-        </Link>
-        <Link
-          to="/projects"
-          ref={(el) => (linksRef.current[3] = el)}
-          onClick={() => setIsOpen(false)}
-          className="text-black">
-          3D View
         </Link>
         <Link
           to="/contact-us"

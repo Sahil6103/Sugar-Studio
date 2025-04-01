@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
 
 export const GalleryHeading = () => {
   const sectionRef = useRef();
@@ -17,21 +18,14 @@ export const GalleryHeading = () => {
           y: 10,
           opacity: 0,
         })
-        .set(paragraphRef1.current, { y: 10, opacity: 0 })
-        .set(paragraphRef2.current, { y: 10, opacity: 0 })
+
         .to(lineRef.current, { x: 0, opacity: 1, duration: 0.3 })
         .to(text1Ref.current, {
           y: 0,
           opacity: 1,
           duration: 0.2,
           stagger: 0.03,
-        })
-        .to(paragraphRef1.current, { y: 0, opacity: 1, duration: 0.2 }, "-=0.5")
-        .to(
-          paragraphRef2.current,
-          { y: 0, opacity: 1, duration: 0.2 },
-          "-=0.3"
-        );
+        });
     }, sectionRef);
 
     return () => ctx.revert();
