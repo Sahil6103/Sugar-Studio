@@ -1,0 +1,80 @@
+import {
+  C1,
+  C2,
+  C3,
+  C4,
+  C5,
+  C6,
+  D1,
+  D2,
+  D3,
+  D4,
+  D5,
+  D6,
+  D7,
+  L1,
+  L2,
+  L3,
+  L4,
+  L5,
+  L6,
+  P1,
+  P2,
+  P3,
+  P4,
+  P5,
+  S1,
+  S2,
+  S3,
+  S4,
+  S5,
+  S6,
+} from "./porjectImg";
+
+export const projectDetail = {
+  chicago: {
+    name: "Velvet Ember",
+    city: "Chicago",
+    concept:
+      "A speakeasy-style luxury lounge hidden behind a bookcase entrance in a historic Chicago building, Velvet Ember blends classic 1920s glamour with modern mixology. Featuring handcrafted leather interiors, live jazz performances, and molecular gastronomy cocktails, it offers an exclusive escape for high-profile guests. The lounge incorporates smart ambient lighting, private whiskey lockers for VIPs, and AI-powered bartending experiences, redefining the art of social gatherings.",
+    location: "Chicago, USA",
+    date: "Completed in January 2019",
+    images: [C1, C2, C3, C4, C5, C6],
+  },
+  london: {
+    name: "Monarch Atelier",
+    city: "London",
+    concept:
+      "An elite bespoke tailoring house in the heart of Mayfair, Monarch Atelier specializes in handcrafted luxury fashion inspired by British royal heritage. Every piece is a fusion of classic aristocratic designs with contemporary innovation, using materials like rare Vicuna wool, gold-thread embroidery, and carbon-fiber-reinforced textiles. Clients receive personalized fittings using AI-driven body scanning technology, ensuring a flawless couture experience. The atelier also hosts invite-only fashion exhibits showcasing lost tailoring techniques and historical recreations.",
+    location: "London, England",
+    date: "Completed in Fabruary 2020",
+    images: [L1, L2, L3, L4, L5, L6],
+  },
+  paris: {
+    name: "Maison Solstice",
+    city: "Paris",
+    concept:
+      "A high-end perfume and candle house that crafts scents inspired by celestial movements and seasonal shifts. Maison Solstice combines ancient Parisian perfumery techniques with modern biochemistry, producing mood-responsive fragrances that subtly change throughout the day. The boutique features an immersive scent gallery, where visitors can walk through different seasons, experiencing aromas from the streets of Paris to exotic landscapes worldwide. VIP customers can also create fully personalized signature fragrances, bottled in limited-edition handcrafted glass decanters.",
+    location: "Paris, France",
+    date: "Completed in March 2018",
+    images: [P1, P2, P3, P4, P5],
+  },
+  dubai: {
+    name: "Mirage Pavilion",
+    city: "Dubai",
+    concept:
+      "A floating luxury resort in the Persian Gulf, inspired by traditional Arabian architecture fused with futuristic sustainability. Mirage Pavilion is a self-sustaining, energy-positive retreat powered by solar panels and underwater turbines. Featuring private overwater villas with retractable glass floors, AI-controlled climate adjustments, and drone-delivered gourmet dining, it caters to high-net-worth travelers seeking exclusivity and innovation. The resort hosts midnight desert light shows, private yacht cinemas, and underwater meditation pods, redefining the concept of luxury hospitality.",
+    location: "Dubai, United Arab Emirates",
+    date: "Completed in September 2021",
+    images: [D1, D2, D3, D4, D5, D6, D7],
+  },
+  sydney: {
+    name: "Harbor Prism",
+    city: "Sydney",
+    concept:
+      "An architectural marvel on Sydney’s waterfront, Harbor Prism is a multi-functional creative hub that serves as an art gallery, performance space, and digital innovation center. Its prism-shaped glass walls reflect Sydney’s natural light, creating a constantly shifting spectrum of colors inside. The venue hosts AI-generated art exhibitions, interactive holographic storytelling events, and immersive VR theater experiences. Sustainable features include a floating garden powered by tidal energy and a fully automated smart irrigation system, ensuring eco-conscious creativity flourishes in every aspect of its design.",
+    location: "Sydney, Australia",
+    date: "Completed in October 2022",
+    images: [S1, S2, S3, S4, S5, S6],
+  },
+};

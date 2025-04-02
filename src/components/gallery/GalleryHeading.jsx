@@ -18,14 +18,21 @@ export const GalleryHeading = () => {
           y: 10,
           opacity: 0,
         })
-
+        .set(paragraphRef1.current, { y: 10, opacity: 0 })
+        .set(paragraphRef2.current, { y: 10, opacity: 0 })
         .to(lineRef.current, { x: 0, opacity: 1, duration: 0.3 })
         .to(text1Ref.current, {
           y: 0,
           opacity: 1,
           duration: 0.2,
           stagger: 0.03,
-        });
+        })
+        .to(paragraphRef1.current, { y: 0, opacity: 1, duration: 0.2 }, "-=0.5")
+        .to(
+          paragraphRef2.current,
+          { y: 0, opacity: 1, duration: 0.2 },
+          "-=0.3"
+        );
     }, sectionRef);
 
     return () => ctx.revert();
@@ -55,6 +62,16 @@ export const GalleryHeading = () => {
               </span>
             ))}
           </h1>
+        </div>
+        <div className="paragraph font-paragraph text-sm flex flex-col gap-5 w-full md:w-[70%]">
+          <p ref={paragraphRef1}>
+            At Sugar Studio, we take pride in delivering innovative and visually
+            stunning projects across the globe. From high-end residential spaces
+            to commercial hubs, each project is a testament to our commitment to
+            quality, creativity, and functionality. Our designs seamlessly blend
+            modern aesthetics with cultural influences, ensuring that every
+            space we create is unique and timeless.
+          </p>
         </div>
       </div>
     </section>

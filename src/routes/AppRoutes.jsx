@@ -6,6 +6,9 @@ import { Home } from "../pages/Home";
 import { AboutUs } from "../pages/AboutUs";
 import { ContactUs } from "../pages/ContactUs";
 import { Gallery } from "../pages/Gallery";
+import { Global } from "../pages/Global";
+import { City } from "../components/global/City";
+// import { Project } from "../components/global/ProjectDetail";
 
 export const AppRoutes = () => {
   return (
@@ -16,6 +19,9 @@ export const AppRoutes = () => {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/global-projects" element={<Global />} />
+          <Route path="/project/:cityId" element={<City />} />
+          <Route path="*" element={<City />} />
         </Route>
       </Routes>
     </Router>

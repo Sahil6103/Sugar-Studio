@@ -128,7 +128,7 @@ export function Philosophy() {
           <div className="content flex flex-col">
             <span
               ref={span1Ref}
-              className="font-heading text-sm md:text-md font-semibold tracking-wider">
+              className="font-heading text-sm md:text-md tracking-wider">
               Simplicity, but never ordinary
             </span>
             <p ref={paragraph1Ref} className="font-paragraph text-sm ">
@@ -141,7 +141,7 @@ export function Philosophy() {
           <div className="content flex flex-col">
             <span
               ref={span2Ref}
-              className="font-heading text-sm font-semibold tracking-wider">
+              className="font-heading text-sm tracking-wider">
               Art in every detail
             </span>
             <p ref={paragraph2Ref} className="font-paragraph text-sm">
@@ -155,7 +155,7 @@ export function Philosophy() {
           <div className="content flex flex-col">
             <span
               ref={span3Ref}
-              className="font-heading text-sm font-semibold tracking-wider">
+              className="font-heading text-sm tracking-wider">
               Designs that feel like magic
             </span>
             <p ref={paragraph3Ref} className="font-paragraph text-sm">

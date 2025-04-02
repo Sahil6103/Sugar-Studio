@@ -118,7 +118,7 @@ export const Header = () => {
           About Us
         </Link>
         <Link
-          to="/projects"
+          to="/global-projects"
           ref={(el) => (mobLinksRef.current[1] = el)}
           onClick={() => setIsOpen(false)}
           className="">
@@ -151,7 +151,7 @@ export const Header = () => {
           About Us
         </Link>
         <Link
-          to="/projects"
+          to="/global-projects"
           ref={(el) => (linksRef.current[1] = el)}
           onClick={() => setIsOpen(false)}
           className="text-black">

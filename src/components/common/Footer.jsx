@@ -67,7 +67,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="privacy mt-5 flex flex-col md:flex-row justify-between gap-2 md:gap-3">
-        <span className="text-[10px] text-[#ffffff70] w-[75%] md:w-[60%] lg:w-[40%] xl:w-[50%] font-paragraph tracking-wider">
+        <span className="text-[10px] text-[#ffffff70] w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[50%] font-paragraph tracking-wider">
           Please note that all photos, designs, and materials on this site are
           the intellectual property of <b className="uppercase">Sugar Studio</b>
           . Any use, reproduction, or distribution without prior permission is
