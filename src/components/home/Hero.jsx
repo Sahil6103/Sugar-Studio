@@ -55,7 +55,7 @@ const Hero = () => {
   return (
     <section
       ref={hero}
-      className="relative min-h-[65vh] md:min-h-screen flex flex-col justify-center items-center bg-light-gray  text-[#000] overflow-hidden">
+      className="relative min-h-[65vh] md:min-h-screen flex flex-col justify-center items-center bg-light-gray md:bg-transparent  text-[#000] overflow-hidden">
       {/* 3D Model */}
       <div
         ref={heroModel}
