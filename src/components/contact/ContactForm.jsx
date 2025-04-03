@@ -168,8 +168,13 @@ export const ContactForm = () => {
           </div>
           <button
             ref={input5Ref}
-            className="font-heading uppercase tracking-wider text-xs lg:text-sm md:mt-3 bg-black hover:bg-light-gray  text-white hover:text-black px-6 py-2.5 transition-all duration-500">
-            Send Message
+            className="group relative font-heading px-8 py-2 mt-5 bg-light-gray text-black overflow-hidden 
+             before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+             before:bg-black before:transition-all before:duration-700 before:[clip-path:circle(0%_at_50%_50%)] 
+             hover:before:[clip-path:circle(150%_at_50%_50%)] before:z-0">
+            <span className="relative z-10 group-hover:text-white transition-all duration-700">
+              Send Message
+            </span>
           </button>
         </form>
       </div>

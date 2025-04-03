@@ -14,7 +14,7 @@ export const AboutImage = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%",
+          start: "top 60%",
           end: "top 50%",
           scrub: 5,
         },

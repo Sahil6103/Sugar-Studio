@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { HOMEABOUT } from "../../assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -92,11 +93,16 @@ export const About = () => {
             cutting-edge technology to create bespoke pieces that elevate every
             space.
           </span>
-          <button
-            ref={buttonRef}
-            className="bg-black text-white font-heading uppercase w-fit mt-10 md:mt-2 px-8 py-2">
-            Discover More
-          </button>
+          <Link
+            to="/about-us"
+            className="group relative font-heading w-fit px-8 py-2 mt-5 bg-black text-white overflow-hidden 
+                       before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                       before:bg-white before:transition-all before:duration-700 before:[clip-path:circle(0%_at_50%_50%)] 
+                       hover:before:[clip-path:circle(150%_at_50%_50%)] before:z-0">
+            <span className="relative z-10 group-hover:text-black transition-all duration-700 w-fit">
+              Discover More
+            </span>
+          </Link>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef } from "react";
 import { COMMERCIAL, RECIDENTIAL, RESTAURANT } from "../../assets";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,7 +49,8 @@ export const Work = () => {
     <section
       ref={sectionRef}
       className="mt-12 md:pt-30 mb-14 md:mb-30 flex flex-col md:flex-row gap-1.5 md:gap-0 overflow-hidden">
-      <div
+      <Link
+        to="/gallery"
         ref={(el) => imgRefs.current.push(el)}
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
         {/* Image */}
@@ -68,9 +70,10 @@ export const Work = () => {
             Recidential
           </span>
         </div>
-      </div>
+      </Link>
 
-      <div
+      <Link
+        to="/gallery"
         ref={(el) => imgRefs.current.push(el)}
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
         <img
@@ -89,9 +92,10 @@ export const Work = () => {
             Commercial
           </span>
         </div>
-      </div>
+      </Link>
 
-      <div
+      <Link
+        to="/gallery"
         ref={(el) => imgRefs.current.push(el)}
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
         <img
@@ -110,7 +114,7 @@ export const Work = () => {
             Restaurant
           </span>
         </div>
-      </div>
+      </Link>
     </section>
   );
 };

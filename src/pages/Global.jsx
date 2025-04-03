@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { WORLD } from "../assets/index";
-import { RiAddLine } from "@remixicon/react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import { Map } from "../components/global/Map";
 
 export const Global = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="">
       <Map />

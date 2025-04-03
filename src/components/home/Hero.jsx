@@ -73,7 +73,7 @@ const Hero = () => {
       {/* Heading Behind 3D */}
       <h1 className="absolute top-20 md:top-5 font-heading tracking-wide text-3xl md:text-6xl lg:text-7xl font-bold text-center z-0 uppercase flex flex-wrap justify-center leading-tight overflow-hidden">
         {text.split(" ").map((word, i) => (
-          <span key={i} className="mr-3 flex">
+          <span key={i} className="mr-3 md:mr-5 flex">
             {word.split("").map((char, j) => (
               <span
                 key={j}

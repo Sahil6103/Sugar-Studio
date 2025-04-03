@@ -8,6 +8,7 @@ import { ContactUs } from "../pages/ContactUs";
 import { Gallery } from "../pages/Gallery";
 import { Global } from "../pages/Global";
 import { City } from "../components/global/City";
+import { PageNotFound } from "../components/common/PageNotFound";
 // import { Project } from "../components/global/ProjectDetail";
 
 export const AppRoutes = () => {
@@ -21,7 +22,7 @@ export const AppRoutes = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/global-projects" element={<Global />} />
           <Route path="/project/:cityId" element={<City />} />
-          <Route path="*" element={<City />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </Router>
