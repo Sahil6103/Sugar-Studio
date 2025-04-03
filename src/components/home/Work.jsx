@@ -51,11 +51,17 @@ export const Work = () => {
       <div
         ref={(el) => imgRefs.current.push(el)}
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
+        {/* Image */}
         <img
           src={RECIDENTIAL}
-          className="h-full w-full object-contain md:object-cover brightness-25"
+          className="h-full w-full object-contain md:object-cover"
         />
-        <div className="absolute inset-0 flex items-center justify-center text-white ">
+
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Text */}
+        <div className="absolute inset-0 flex items-center justify-center text-white">
           <span
             ref={(el) => textRefs.current.push(el)}
             className="font-heading text-lg md:text-xl lg:text-3xl text-white tracking-wider">
@@ -69,8 +75,13 @@ export const Work = () => {
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
         <img
           src={COMMERCIAL}
-          className="h-full w-full object-contain md:object-cover brightness-25"
+          className="h-full w-full object-contain md:object-cover"
         />
+
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* Text  */}
         <div className="absolute inset-0 flex items-center justify-center text-white ">
           <span
             ref={(el) => textRefs.current.push(el)}
@@ -85,8 +96,13 @@ export const Work = () => {
         className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
         <img
           src={RESTAURANT}
-          className="h-full w-full object-contain md:object-cover brightness-25"
+          className="h-full w-full object-contain md:object-cover"
         />
+
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        {/* text */}
         <div className="absolute inset-0 flex items-center justify-center text-white ">
           <span
             ref={(el) => textRefs.current.push(el)}
