@@ -7,6 +7,10 @@ import gsap from "gsap";
 import { CALENDAR, LOCATION } from "../../assets";
 
 export const City = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { cityId } = useParams();
   const project = projectDetail[cityId];
   //   console.log(project);

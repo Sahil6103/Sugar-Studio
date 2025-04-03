@@ -10,6 +10,7 @@ import RESTAURANT from "./imgs/restaurant.webp";
 import WORLD from "./imgs/World_Map.svg";
 import LOCATION from "./imgs/Location.svg";
 import CALENDAR from "./imgs/Calendar.svg";
+import FLOWERPOT from "./imgs/flowerpot.svg";
 
 export {
   LOGO,
@@ -24,4 +25,5 @@ export {
   WORLD,
   LOCATION,
   CALENDAR,
+  FLOWERPOT,
 };
