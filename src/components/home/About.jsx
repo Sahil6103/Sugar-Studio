@@ -94,6 +94,7 @@ export const About = () => {
             space.
           </span>
           <Link
+            ref={buttonRef}
             to="/about-us"
             className="group relative font-heading w-fit px-8 py-2 mt-5 bg-black text-white overflow-hidden 
                        before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
