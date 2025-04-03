@@ -1,8 +1,81 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useEffect, useState, forwardRef } from "react";
+import { Link, useLocation } from "react-router-dom";
 import gsap from "gsap";
 import { LOGO } from "../../assets";
-import { stagger } from "motion";
+import { motion } from "framer-motion";
+
+const MotionLink = motion(
+  forwardRef((props, ref) => <Link ref={ref} {...props} />)
+);
+
+const DURATION = 0.25;
+const STAGGER = 0.025;
+
+const FlipLink = ({ children, href }, ref) => {
+  const location = useLocation(); // Detect route changes
+  const [key, setKey] = useState(0); // Key to force re-render
+
+  useEffect(() => {
+    setKey((prev) => prev + 1); // Force animation restart on route change
+  }, [location.pathname]); // Runs when route changes
+
+  return (
+    <MotionLink
+      initial="initial"
+      whileHover="hovered"
+      to={href}
+      ref={ref}
+      className="relative block overflow-hidden whitespace-nowrap font-black uppercase text-black"
+      style={{
+        lineHeight: 1,
+      }}>
+      <div>
+        {children.split(/(?=\s|\S)/).map((l, i) => (
+          <motion.span
+            variants={{
+              initial: {
+                y: 0,
+              },
+              hovered: {
+                y: "-100%",
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}>
+            {l === " " ? "\u00A0" : l} {/* Keep spaces visible */}
+          </motion.span>
+        ))}
+      </div>
+      <div className="absolute inset-0">
+        {children.split(/(?=\s|\S)/).map((l, i) => (
+          <motion.span
+            variants={{
+              initial: {
+                y: "100%",
+              },
+              hovered: {
+                y: 0,
+              },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+            className="inline-block"
+            key={i}>
+            {l === " " ? "\u00A0" : l} {/* Keep spaces visible */}
+          </motion.span>
+        ))}
+      </div>
+    </MotionLink>
+  );
+};
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -143,14 +216,21 @@ export const Header = () => {
       <nav
         ref={navRef}
         className="hidden md:flex justify-center items-center gap-8 text-[13px] tracking-wide">
-        <Link
-          to="/about-us"
-          ref={(el) => (linksRef.current[0] = el)}
-          onClick={() => setIsOpen(false)}
-          className="text-black">
+        <FlipLink ref={(el) => (linksRef.current[0] = el)} href="/about-us">
           About Us
-        </Link>
-        <Link
+        </FlipLink>
+        <FlipLink
+          ref={(el) => (linksRef.current[1] = el)}
+          href="/global-projects">
+          Global Projects
+        </FlipLink>
+        <FlipLink ref={(el) => (linksRef.current[2] = el)} href="/gallery">
+          Gallery
+        </FlipLink>
+        <FlipLink ref={(el) => (linksRef.current[3] = el)} href="/contact-us">
+          Contact Us
+        </FlipLink>
+        {/* <Link
           to="/global-projects"
           ref={(el) => (linksRef.current[1] = el)}
           onClick={() => setIsOpen(false)}
@@ -170,7 +250,7 @@ export const Header = () => {
           onClick={() => setIsOpen(false)}
           className="text-black">
           Contact Us
-        </Link>
+        </Link> */}
       </nav>
     </header>
   );
