@@ -53,7 +53,7 @@ const Hero = () => {
       ref={hero}
       className="relative h-screen flex justify-center items-center text-[#000]">
       {/* 3D Model */}
-      <div ref={heroModel} className="absolute inset-0 z-10">
+      <div ref={heroModel} className="absolute inset-0 z-10 h-[80vh]">
         <Canvas camera={{ position: [0, 1.5, 5], fov: 50 }}>
           <ambientLight intensity={1.2} />
           <directionalLight position={[2, 2, 2]} intensity={2} />
