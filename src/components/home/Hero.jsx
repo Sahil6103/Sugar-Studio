@@ -13,8 +13,8 @@ const Model = () => {
       const width = window.innerWidth;
 
       if (width < 640) {
-        setScale(0.8); // Mobile size
-        setPosition([0, -1, 0]); // Adjust position for small screens
+        setScale(0.9); // Mobile size
+        setPosition([0, -1.5, 0]); // Adjust position for small screens
       } else if (width < 1024) {
         setScale(1); // Tablet size
         setPosition([0, -1.2, 0]);
@@ -55,11 +55,11 @@ const Hero = () => {
   return (
     <section
       ref={hero}
-      className="relative min-h-[80vh] md:min-h-screen flex flex-col justify-center items-center text-[#000] overflow-hidden">
+      className="relative min-h-[65vh] md:min-h-screen flex flex-col justify-center items-center bg-light-gray  text-[#000] overflow-hidden">
       {/* 3D Model */}
       <div
         ref={heroModel}
-        className="absolute inset-0 z-10 w-full h-[70vh] md:h-full pointer-events-none">
+        className="absolute inset-0 z-10 w-full md:h-full pointer-events-none">
         <Canvas
           camera={{ position: [0, 1.5, 5], fov: 50 }}
           className="!w-full !h-full">
@@ -71,7 +71,7 @@ const Hero = () => {
       </div>
 
       {/* Heading Behind 3D */}
-      <h1 className="absolute top-20 md:top-5 font-heading tracking-wide text-3xl md:text-6xl lg:text-7xl font-bold text-center z-0 uppercase flex flex-wrap justify-center leading-tight overflow-hidden">
+      <h1 className="absolute top-20 md:top-5 font-heading tracking-wide px-3 text-3xl md:text-6xl lg:text-7xl font-bold text-center z-0 uppercase flex flex-wrap justify-center leading-tight overflow-hidden">
         {text.split(" ").map((word, i) => (
           <span key={i} className="mr-3 md:mr-5 flex">
             {word.split("").map((char, j) => (
