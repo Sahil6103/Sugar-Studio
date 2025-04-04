@@ -99,8 +99,8 @@ export const ContactForm = () => {
         <div className="flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
           <div
             ref={lineRef}
-            className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-2 2xl:mt-4 bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide leading-7 md:leading-6 lg:leading-6 flex flex-wrap overflow-hidden">
+            className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-3.5 2xl:mt-4 bg-black"></div>
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
             {text.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
