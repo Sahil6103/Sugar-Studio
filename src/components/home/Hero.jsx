@@ -87,7 +87,12 @@ const Hero = () => {
           </span>
         ))}
       </h1>
-     
+      <span className="hidden md:block absolute bottom-5 md:bottom-10 right-5 font-paragraph font-semibold tracking-wide text-xs">
+        Rotate With Mouse
+      </span>
+      <span className="md:hidden absolute bottom-5 md:bottom-10 right-5 font-paragraph font-semibold tracking-wide text-xs">
+        You can interact
+      </span>
     </section>
   );
 };
