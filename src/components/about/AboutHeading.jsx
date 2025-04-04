@@ -40,9 +40,9 @@ export const AboutHeading = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="about px-3 md:px-10 lg:px-20 flex">
-      <div className="content flex flex-col justify-start items-start gap-8 my-14 w-5/6">
-        <div className="heading flex items-center gap-3">
+    <section ref={sectionRef} className="px-3 md:px-10 lg:px-20 flex">
+      <div className="flex flex-col justify-start items-start gap-8 my-14 w-5/6">
+        <div className="flex items-center gap-3">
           <div
             ref={lineRef}
             className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-0 2xl:mt-4 bg-black"></div>

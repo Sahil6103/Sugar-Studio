@@ -95,8 +95,8 @@ export const ContactForm = () => {
 
   return (
     <section ref={sectionRef} className="px-3 md:px-10 lg:px-20">
-      <div className="content mt-8 flex flex-col md:flex-row md:justify-between items-start lg:gap-24">
-        <div className="heading flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
+      <div className="mt-8 flex flex-col md:flex-row md:justify-between items-start lg:gap-24">
+        <div className="flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
           <div
             ref={lineRef}
             className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-2 2xl:mt-4 bg-black"></div>

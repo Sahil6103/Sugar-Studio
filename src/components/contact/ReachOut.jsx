@@ -128,8 +128,8 @@ export const ReachOut = () => {
 
   return (
     <section ref={sectionRef} className="px-3 md:px-10 lg:px-20">
-      <div className="content mb-12 lg:my-14 flex flex-col md:flex-row md:justify-between items-start lg:gap-24">
-        <div className="heading flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
+      <div className="mb-12 lg:my-14 flex flex-col md:flex-row md:justify-between items-start lg:gap-24">
+        <div className="flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
           <div
             ref={lineRef}
             className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-2 2xl:mt-4 bg-black"></div>
@@ -184,7 +184,7 @@ export const ReachOut = () => {
             </span>
             <div
               ref={detail3Ref}
-              className="adress flex flex-col font-paragraph text-sm 2xl:text-xl tracking-wide">
+              className="flex flex-col font-paragraph text-sm 2xl:text-xl tracking-wide">
               <span>Sugar Studio</span>
               <span>23 Lumdiengjri Street, Laitumkhrah,</span>
               <span>Shillong, Meghalaya - 793003, India</span>

@@ -13,11 +13,6 @@
 }
 
 @font-face {
-  font-family: "Neue-Montreal";
-  src: url(../assets/fonts/neue-montreal-free-demo-pangram-pangram-030418/NeueMontreal-Medium.otf);
-}
-
-@font-face {
   font-family: "ClashDisplay";
   src: url(../assets/fonts/Clash-Display/WEB/fonts/ClashDisplay-Medium.woff2)
       format("woff2"),

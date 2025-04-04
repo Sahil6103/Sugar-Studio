@@ -39,15 +39,13 @@ export const Marquee = () => {
   }, [duration]);
 
   return (
-    <div className="page2 h-fit w-full overflow-hidden">
-      <div
-        ref={marqueeRef}
-        className="move primary flex gap-10 py-[2vw] whitespace-nowrap">
+    <div className="h-fit w-full overflow-hidden">
+      <div ref={marqueeRef} className=" flex gap-10 py-[2vw] whitespace-nowrap">
         {[...Array(5)].map((_, index) => (
           <div
             key={index}
             ref={(el) => (itemsRef.current[index] = el)}
-            className="marque text-black font-heading flex flex-shrink-0 items-center gap-[3vw] px-[2vw] text-5xl">
+            className=" text-black font-heading flex flex-shrink-0 items-center gap-[3vw] px-[2vw] text-5xl">
             <h1>Redefining Spaces with Innovation.</h1>
           </div>
         ))}

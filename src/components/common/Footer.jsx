@@ -47,7 +47,7 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="flex gap-2 mt-5">
-        <div className="social flex justify-center lg:justify-start gap-3">
+        <div className="flex justify-center lg:justify-start gap-3">
           <Link className="">
             <RiInstagramLine
               size={20}
@@ -68,7 +68,7 @@ export const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="privacy mt-5 flex flex-col md:flex-row justify-between gap-2 md:gap-3">
+      <div className="mt-5 flex flex-col md:flex-row justify-between gap-2 md:gap-3">
         <span className="text-[10px] text-[#ffffff70] w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[50%] font-paragraph tracking-wider">
           Please note that all photos, designs, and materials on this site are
           the intellectual property of <b className="uppercase">Sugar Studio</b>

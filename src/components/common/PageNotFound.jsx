@@ -7,7 +7,7 @@ export const PageNotFound = () => {
     <section className="px-3 md:px-10 lg:px-20 py-10">
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">
         <LineArt />
-        <div className="content text-center flex flex-col justify-center items-center gap-3 w-full md:w-2/3">
+        <div className="text-center flex flex-col justify-center items-center gap-3 w-full md:w-2/3">
           <span className="font-heading text-xl md:text-2xl">OOOPS...</span>
           <span className="font-heading text-4xl md:text-5xl">
             Page Not Found

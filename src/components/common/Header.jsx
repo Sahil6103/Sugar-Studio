@@ -157,7 +157,7 @@ export const Header = () => {
       className="relative flex justify-between items-center text-black py-4 md:py-7 px-2 md:px-10 lg:px-14 font-heading">
       <div
         ref={logo}
-        className="logo font-extrabold text-3xl md:text-4xl lg:text-5xl w-24 md:w-28 h-24 md:h-28">
+        className="font-extrabold text-3xl md:text-4xl lg:text-5xl w-24 md:w-28 h-24 md:h-28">
         <Link to="/" className="">
           <img src={LOGO} alt="" className="w-full h-full" />
         </Link>
@@ -167,15 +167,15 @@ export const Header = () => {
       <button
         ref={menuIcon}
         onClick={() => setIsOpen(!isOpen)}
-        className={`menuicon md:hidden absolute top-10 md:top-14 right-5 md:right-12 lg:right-20 z-[99] h-10 flex flex-col justify-center items-center cursor-pointer ${
+        className={`md:hidden absolute top-10 md:top-14 right-5 md:right-12 lg:right-20 z-[99] h-10 flex flex-col justify-center items-center cursor-pointer ${
           isOpen ? "gap-0 rotate-[-15deg]" : "gap-1.5"
         }`}>
         <div
-          className={`line1 w-6 md:w-8 h-[1.5px] bg-black transition-all duration-500 ${
+          className={`w-6 md:w-8 h-[1.5px] bg-black transition-all duration-500 ${
             isOpen ? "bg-black rotate-[62deg] w-6 md:w-6" : ""
           }`}></div>
         <div
-          className={`link2 w-6 md:w-8 h-[1.5px] bg-black transition-all duration-500 ${
+          className={`w-6 md:w-8 h-[1.5px] bg-black transition-all duration-500 ${
             isOpen ? " bg-black rotate-[150deg] w-6 md:w-6" : ""
           }`}></div>
       </button>
@@ -231,27 +231,6 @@ export const Header = () => {
         <FlipLink ref={(el) => (linksRef.current[3] = el)} href="/contact-us">
           Contact Us
         </FlipLink>
-        {/* <Link
-          to="/global-projects"
-          ref={(el) => (linksRef.current[1] = el)}
-          onClick={() => setIsOpen(false)}
-          className="text-black">
-          Global Project
-        </Link>
-        <Link
-          to="/gallery"
-          ref={(el) => (linksRef.current[2] = el)}
-          onClick={() => setIsOpen(false)}
-          className="text-black">
-          Gallery
-        </Link>
-        <Link
-          to="/contact-us"
-          ref={(el) => (linksRef.current[4] = el)}
-          onClick={() => setIsOpen(false)}
-          className="text-black">
-          Contact Us
-        </Link> */}
       </nav>
     </header>
   );

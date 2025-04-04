@@ -38,11 +38,11 @@ export const Strength = () => {
     <section
       ref={sectionRef}
       className="px-3 md:px-10 lg:px-20 my-20 flex flex-col md:flex-col justify-center items-center gap-8">
-      <div ref={firstRef} className="frsit flex flex-col md:flex-row gap-8">
+      <div ref={firstRef} className=" flex flex-col md:flex-row gap-8">
         <Statistics num="15+" text="Years of Experience" ref={state1} />
         <Statistics num="250+" text="Projects Completed" ref={state1} />
       </div>
-      <div ref={secondRef} className="frsit flex flex-col md:flex-row gap-8">
+      <div ref={secondRef} className="flex flex-col md:flex-row gap-8">
         <Statistics num="100+" text="Happy Clients" ref={state1} />
         <Statistics num="25+" text="Awards & Recognitions" ref={state1} />
       </div>
