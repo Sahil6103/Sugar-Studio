@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect, useRef } from "react";
+import { LineArt } from "../common/LineArt";
 
 export const AboutHeading = () => {
   const sectionRef = useRef();
@@ -40,7 +41,7 @@ export const AboutHeading = () => {
 
   return (
     <section ref={sectionRef} className="about px-3 md:px-10 lg:px-20 flex">
-      <div className="content flex flex-col justify-start items-start gap-8 my-14">
+      <div className="content flex flex-col justify-start items-start gap-8 my-14 w-5/6">
         <div className="heading flex items-center gap-3">
           <div
             ref={lineRef}
@@ -80,7 +81,7 @@ export const AboutHeading = () => {
           </p>
         </div>
       </div>
-      {/* <LineArt /> */}
+      <LineArt />
     </section>
   );
 };

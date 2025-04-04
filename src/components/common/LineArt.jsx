@@ -37,7 +37,7 @@ export const LineArt = () => {
       ref={svgRef}
       version="1.1"
       id="svg2"
-      className="w-[250px] md:w-[350px] h-[250px] md:h-[350px]"
+      className="hidden md:block  w-[250px] md:w-[450px] h-[250px] md:h-[450px]"
       viewBox="0 0 666.66669 666.66669"
       sodipodi:docname="6632779.eps"
       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
