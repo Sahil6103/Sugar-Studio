@@ -47,3 +47,97 @@
     }
   }
 }
+
+/* Parent rotation animation */
+@keyframes boxSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Box movement: merge to center at 50% */
+@keyframes mergeToCenter {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50%, 50%);
+  }
+}
+
+/* Optional: reverse the directions based on box */
+@keyframes mergeTopLeft {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50%, 50%);
+  }
+}
+@keyframes mergeTopRight {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50%, 50%);
+  }
+}
+@keyframes mergeBottomLeft {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50%, -50%);
+  }
+}
+@keyframes mergeBottomRight {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Apply the animations */
+.boxes {
+  animation: boxSpin 2s infinite ease-in-out;
+}
+
+.box {
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  animation-name: mergeTopLeft;
+}
+.top-right {
+  top: 0;
+  right: 0;
+  animation-name: mergeTopRight;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  animation-name: mergeBottomLeft;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  animation-name: mergeBottomRight;
+}

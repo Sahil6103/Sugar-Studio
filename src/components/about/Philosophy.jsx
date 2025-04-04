@@ -103,7 +103,7 @@ export function Philosophy() {
           <div
             ref={lineRef}
             className="hidden md:block w-10 h-[3px] bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl tracking-wide flex flex-wrap overflow-hidden">
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
             {text.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
@@ -124,41 +124,47 @@ export function Philosophy() {
       </div>
       <div className="cards flex flex-col gap-8">
         <div className="card flex justify-start items-start gap-3 md:gap-5">
-          <img ref={img1Ref} src={SIMPLE} alt="" className="w-10" />
+          <img ref={img1Ref} src={SIMPLE} alt="" className="w-10 2xl:w-14" />
           <div className="content flex flex-col">
             <span
               ref={span1Ref}
-              className="font-heading text-sm md:text-md tracking-wider">
+              className="font-heading text-sm md:text-md 2xl:text-xl tracking-wider">
               Simplicity, but never ordinary
             </span>
-            <p ref={paragraph1Ref} className="font-paragraph text-sm ">
+            <p
+              ref={paragraph1Ref}
+              className="font-paragraph text-sm 2xl:text-lg">
               We strip away the unnecessary and embrace raw, timeless beauty.
             </p>
           </div>
         </div>
         <div className="card flex justify-start items-start gap-3 md:gap-5">
-          <img ref={img2Ref} src={ART} alt="" className="w-10" />
+          <img ref={img2Ref} src={ART} alt="" className="w-10 2xl:w-14" />
           <div className="content flex flex-col">
             <span
               ref={span2Ref}
-              className="font-heading text-sm tracking-wider">
+              className="font-heading text-sm md:text-md 2xl:text-xl tracking-wider">
               Art in every detail
             </span>
-            <p ref={paragraph2Ref} className="font-paragraph text-sm">
+            <p
+              ref={paragraph2Ref}
+              className="font-paragraph text-sm 2xl:text-lg">
               Whether it’s line art, textures, or 3D elements, every project is
               a canvas.
             </p>
           </div>
         </div>
         <div className="card flex justify-start items-start gap-3 md:gap-5">
-          <img ref={img3Ref} src={MAGIC} alt="" className="w-10" />
+          <img ref={img3Ref} src={MAGIC} alt="" className="w-10 2xl:w-14" />
           <div className="content flex flex-col">
             <span
               ref={span3Ref}
-              className="font-heading text-sm tracking-wider">
+              className="font-heading text-sm md:text-md 2xl:text-xl tracking-wider">
               Designs that feel like magic
             </span>
-            <p ref={paragraph3Ref} className="font-paragraph text-sm">
+            <p
+              ref={paragraph3Ref}
+              className="font-paragraph text-sm 2xl:text-lg">
               We blend form, function, and emotion seamlessly.
             </p>
           </div>

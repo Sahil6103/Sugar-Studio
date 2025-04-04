@@ -75,13 +75,13 @@ export const City = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="px-3 md:px-10 lg:px-20 my-14">
+      <section ref={sectionRef} className="px-3 md:px-10 lg:px-40 my-14">
         {/* heading */}
         <div className="heading flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
           <div
             ref={lineRef}
-            className="hidden md:block w-10 h-[3px] mt-3.5 lg:mt-3.5 bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl tracking-wide flex flex-wrap overflow-hidden">
+            className="hidden md:block w-10 h-[3px] mt-3.5 lg:mt-3.5 2xl:mt-4 bg-black"></div>
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
             {text.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
@@ -103,32 +103,32 @@ export const City = () => {
         {/* detail */}
         <div className="flex flex-col gap-5 my-14">
           <div className="flex justify-start items-center gap-8">
-            <img ref={icon1Ref} src={LOCATION} alt="" className="w-5" />
+            <img ref={icon1Ref} src={LOCATION} alt="" className="w-5 2xl:w-7" />
             <div className="flex flex-col">
               <span
                 ref={sub1Heading}
-                className="font-heading tracking-wide text-sm">
+                className="font-heading tracking-wide text-sm 2xl:text-xl">
                 Location :
               </span>
               <span
                 ref={sub1Detail}
-                className="font-paragraph text-sm tracking-wide">
+                className="font-paragraph text-sm 2xl:text-lg tracking-wide">
                 {project.location}
               </span>
             </div>
           </div>
 
           <div className="flex justify-start items-center gap-8">
-            <img ref={icon2Ref} src={CALENDAR} alt="" className="w-5" />
+            <img ref={icon2Ref} src={CALENDAR} alt="" className="w-5 2xl:w-7" />
             <div className="flex flex-col">
               <span
                 ref={sub2Heading}
-                className="font-heading tracking-wide text-sm">
+                className="font-heading tracking-wide text-sm 2xl:text-xl">
                 Date :
               </span>
               <span
                 ref={sub2Detail}
-                className="font-paragraph text-sm tracking-wide">
+                className="font-paragraph text-sm 2xl:text-lg tracking-wide">
                 {project.date}
               </span>
             </div>
@@ -137,12 +137,14 @@ export const City = () => {
 
         {/* concept */}
         <div className="flex flex-col gap-5">
-          <span ref={headingRef} className="font-heading text-xl tracking-wide">
+          <span
+            ref={headingRef}
+            className="font-heading text-xl 2xl:text-3xl tracking-wide">
             {project.name}
           </span>
           <p
             ref={paragraphRef}
-            className="font-paragraph text-sm md:w-[70%] lg:w-[60%] tracking-wide">
+            className="font-paragraph text-sm 2xl:text-xl md:w-[70%] lg:w-[60%] tracking-wide">
             {project.concept}
           </p>
         </div>

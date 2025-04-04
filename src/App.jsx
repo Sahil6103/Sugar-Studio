@@ -1,8 +1,8 @@
 import React from "react";
-import { AppRoutes } from "./routes/AppRoutes";
+import AppRoutes from "./routes/AppRoutes";
 import SmoothScroll from "./components/common/SmoothScroll";
 
-export const App = () => {
+const App = () => {
   return (
     <>
       <SmoothScroll>
@@ -11,3 +11,5 @@ export const App = () => {
     </>
   );
 };
+
+export default App;

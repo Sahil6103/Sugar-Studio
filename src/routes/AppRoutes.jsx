@@ -11,7 +11,7 @@ import { City } from "../components/global/City";
 import { PageNotFound } from "../components/common/PageNotFound";
 // import { Project } from "../components/global/ProjectDetail";
 
-export const AppRoutes = () => {
+const AppRoutes = () => {
   return (
     <Router>
       <Routes>
@@ -28,3 +28,5 @@ export const AppRoutes = () => {
     </Router>
   );
 };
+
+export default AppRoutes;

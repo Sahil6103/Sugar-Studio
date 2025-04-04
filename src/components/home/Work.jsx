@@ -52,18 +52,16 @@ export const Work = () => {
       <Link
         to="/gallery"
         ref={(el) => imgRefs.current.push(el)}
-        className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group">
+        className="relative md:h-[90vh] flex-1 transition-all duration-500 ease-in-out hover:flex-12/12 group overflow-hidden">
         {/* Image */}
         <img
           src={RECIDENTIAL}
-          className="h-full w-full object-contain md:object-cover"
+          className="h-full w-full object-contain md:object-cover brightness-[0.6]"
+          alt="Residential"
         />
 
-        {/* Black Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
-
         {/* Text */}
-        <div className="absolute inset-0 flex items-center justify-center text-white">
+        <div className="absolute inset-0 flex items-center justify-center z-10">
           <span
             ref={(el) => textRefs.current.push(el)}
             className="font-heading text-lg md:text-xl lg:text-3xl text-white tracking-wider">

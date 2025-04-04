@@ -75,7 +75,7 @@ export const About = () => {
         </div>
         <div
           ref={contentRef}
-          className="content md:absolute bottom-[-30%] lg:bottom-[-20%] left-[20%] lg:left-[25%] md:w-[60%] md:bg-light-gray lg:w-[50%] h-fit md:p-8 flex flex-col md:gap-5">
+          className="content md:absolute bottom-[-30%] lg:bottom-[-20%] xl:bottom-[-10%] left-[20%] lg:left-[25%] md:w-[60%] md:bg-light-gray lg:w-[50%] h-fit md:p-8 flex flex-col md:gap-5">
           <div className="heading flex items-start gap-2">
             <div
               ref={lineRef}

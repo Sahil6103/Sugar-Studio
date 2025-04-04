@@ -8,7 +8,7 @@ export const ContactUs = () => {
   }, []);
 
   return (
-    <section className="px-3 md:px-10 lg:px-20">
+    <section className="px-3 md:px-10 lg:px-20 2xl:my-20">
       <ContactForm />
       <ReachOut />
     </section>

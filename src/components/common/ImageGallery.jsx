@@ -8,7 +8,7 @@ export const ImageGallery = ({ images }) => {
   const sectionRef = useRef();
   return (
     <section ref={sectionRef} className=" md:px-10 lg:px-20 mb-20 mt-8 py-14">
-      <div className="max-w-6xl mx-auto columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4">
+      <div className="max-w-[100rem] mx-auto columns-2 md:columns-3 lg:columns-4 gap-4">
         {images.map((src, index) => {
           const { ref, inView } = useInView({
             triggerOnce: true,

@@ -99,8 +99,8 @@ export const ContactForm = () => {
         <div className="heading flex items-start gap-3 mt-5 w-full md:w-1/2 lg:w-2/5">
           <div
             ref={lineRef}
-            className="hidden md:block w-10 h-[3px] mt-3.5 lg:mt-3.5 bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl tracking-wide flex flex-wrap overflow-hidden">
+            className="hidden md:block w-10 h-[3px] mt-3.5 lg:mt-3.5 2xl:mt-4 bg-black"></div>
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
             {text.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
@@ -125,45 +125,49 @@ export const ContactForm = () => {
           <div ref={input1Ref} className="input flex flex-col gap-1">
             <label
               htmlFor="fullname"
-              className="text-xs lg:text-sm font-heading">
+              className="text-xs lg:text-sm 2xl:text-lg font-heading">
               Fullname
             </label>
             <input
               type="text"
               placeholder="e.g. Robert Downey Jr."
-              className="border-b-2 border-light-gray text-xs lg:text-sm text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
+              className="border-b-2 border-light-gray text-xs lg:text-sm 2xl:text-lg text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
             />
           </div>
           <div ref={input2Ref} className="input flex flex-col gap-1">
-            <label htmlFor="email" className="text-xs lg:text-sm font-heading">
+            <label
+              htmlFor="email"
+              className="text-xs lg:text-sm 2xl:text-lg font-heading">
               Email
             </label>
             <input
               type="text"
               placeholder="e.g. robert@jr.com"
-              className="border-b-2 border-light-gray text-xs lg:text-sm text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
+              className="border-b-2 border-light-gray text-xs lg:text-sm 2xl:text-lg text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
             />
           </div>
           <div ref={input3Ref} className="input flex flex-col gap-1">
-            <label htmlFor="mobile" className="text-xs lg:text-sm font-heading">
+            <label
+              htmlFor="mobile"
+              className="text-xs lg:text-sm 2xl:text-lg font-heading">
               Mobile No.
             </label>
             <input
               type="text"
               placeholder="e.g. +1234567890"
-              className="border-b-2 border-light-gray text-xs lg:text-sm text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
+              className="border-b-2 border-light-gray text-xs lg:text-sm 2xl:text-lg text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
             />
           </div>
           <div ref={input4Ref} className="input flex flex-col gap-1">
             <label
               htmlFor="fullname"
-              className="text-xs lg:text-sm font-heading">
+              className="text-xs lg:text-sm 2xl:text-lg font-heading">
               Message
             </label>
             <textarea
               rows={5}
               placeholder="Tell us what you need"
-              className="border-b-2 border-light-gray text-xs lg:text-sm text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
+              className="border-b-2 border-light-gray text-xs lg:text-sm 2xl:text-lg text-black focus:outline-0 font-paragraph tracking-wide focus:border-black hover:border-black transition-all duration-500"
             />
           </div>
           <button
@@ -172,7 +176,7 @@ export const ContactForm = () => {
              before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
              before:bg-black before:transition-all before:duration-700 before:[clip-path:circle(0%_at_50%_50%)] 
              hover:before:[clip-path:circle(150%_at_50%_50%)] before:z-0">
-            <span className="relative z-10 group-hover:text-white transition-all duration-700">
+            <span className="relative z-10 group-hover:text-white transition-all text-sm 2xl:text-lg duration-700">
               Send Message
             </span>
           </button>

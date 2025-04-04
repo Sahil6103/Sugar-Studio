@@ -45,7 +45,7 @@ export const AboutHeading = () => {
           <div
             ref={lineRef}
             className="hidden md:block w-10 h-[3px] bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl tracking-wide flex flex-wrap overflow-hidden">
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
             {text1.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
@@ -63,7 +63,7 @@ export const AboutHeading = () => {
             ))}
           </h1>
         </div>
-        <div className="paragraph font-paragraph text-sm flex flex-col gap-5 w-full md:w-[70%]">
+        <div className="paragraph font-paragraph text-sm 2xl:text-lg flex flex-col gap-5 w-full md:w-[70%]">
           <p ref={paragraphRef1}>
             At Sugar Studio, every design is more than just a visual—it’s an
             experience. We believe that great design is not just about form and

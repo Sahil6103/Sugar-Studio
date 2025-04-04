@@ -30,7 +30,9 @@ export const AboutImage = () => {
   });
 
   return (
-    <section ref={sectionRef} className="about px-3 md:px-10 lg:px-20">
+    <section
+      ref={sectionRef}
+      className="about px-3 md:px-10 lg:px-20 lg:my-30 flex justify-center items-center">
       <img ref={imgRef} src={ABOUT} alt="" className="" />
     </section>
   );

@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { LOGO } from "../../assets";
 import { motion } from "framer-motion";
 
-const MotionLink = motion(
+const MotionLink = motion.create(
   forwardRef((props, ref) => <Link ref={ref} {...props} />)
 );
 
@@ -25,7 +25,7 @@ const FlipLink = ({ children, href }, ref) => {
       whileHover="hovered"
       to={href}
       ref={ref}
-      className="relative block overflow-hidden whitespace-nowrap font-black uppercase text-black"
+      className="relative block overflow-hidden whitespace-nowrap text-xs text-black"
       style={{
         lineHeight: 1,
       }}>
@@ -95,7 +95,7 @@ export const Header = () => {
 
     headerTl.current
       .set(logo.current, { y: -30, opacity: 0 })
-      .set(linksRef.current, { y: -30, opacity: 0 })
+      // .set(linksRef.current, { y: -30, opacity: 0 })
       .to(logo.current, {
         y: 0,
         opacity: 1,

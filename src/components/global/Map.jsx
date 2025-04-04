@@ -119,7 +119,7 @@ export const Map = () => {
           <div
             key={city.id}
             ref={(el) => (cityRefs.current[index] = el)} // Store each city ref separately
-            className="absolute bg-white rounded-full w-6 h-6 p-0.5 flex justify-center items-center cursor-pointer hover:bg-light-gray transition-all duration-300"
+            className="absolute bg-white rounded-full w-6 2xl:w-10 h-6 2xl:h-10 p-0.5 flex justify-center items-center cursor-pointer hover:bg-light-gray transition-all duration-300"
             style={{
               top: city.top,
               left: city.left,
