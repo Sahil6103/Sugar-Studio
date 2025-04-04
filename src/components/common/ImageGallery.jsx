@@ -12,7 +12,7 @@ export const ImageGallery = ({ images }) => {
         {images.map((src, index) => {
           const { ref, inView } = useInView({
             triggerOnce: true,
-            threshold: 0.2,
+            threshold: 0.1,
           });
 
           return (
@@ -45,7 +45,7 @@ export const ImageGallery = ({ images }) => {
               onClick={() => setSelectedImage(null)}>
               <motion.img
                 src={selectedImage.src}
-                className="max-w-full max-h-[90vh] rounded-lg shadow-lg"
+                className="max-w-[90vw] max-h-[90vh] rounded-lg shadow-lg"
                 layoutId={selectedImage.id}
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
