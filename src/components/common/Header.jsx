@@ -21,11 +21,11 @@ const FlipLink = ({ children, href }, ref) => {
 
   return (
     <MotionLink
-      initial="initial"
-      whileHover="hovered"
       to={href}
       ref={ref}
       className="relative block overflow-hidden whitespace-nowrap text-xs text-black"
+      initial="initial"
+      whileHover="hovered"
       style={{
         lineHeight: 1,
       }}>
@@ -79,23 +79,24 @@ const FlipLink = ({ children, href }, ref) => {
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const linksRef = useRef([]);
   const mobNavRef = useRef();
   const mobLinksRef = useRef([]);
   const logo = useRef();
   const header = useRef();
   const menuIcon = useRef();
   const navRef = useRef();
-  const linksRef = useRef([]);
-
   const tl = useRef();
+  linksRef.current = [];
 
   useEffect(() => {
+    console.log(linksRef.current);
     const headerTl = gsap.timeline();
     headerTl.current = gsap.timeline();
 
-    headerTl.current
+    headerTl
       .set(logo.current, { y: -30, opacity: 0 })
-      // .set(linksRef.current, { y: -30, opacity: 0 })
+      .set(linksRef.current, { y: -30, opacity: 0 })
       .to(logo.current, {
         y: 0,
         opacity: 1,

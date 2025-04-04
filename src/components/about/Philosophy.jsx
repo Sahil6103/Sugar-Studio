@@ -38,7 +38,7 @@ export function Philosophy() {
         .fromTo(
           textRef.current,
           { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.3 }
+          { y: 0, opacity: 1, duration: 0.3, stagger: 0.1 }
         )
         .fromTo(
           img1Ref.current,
@@ -102,8 +102,8 @@ export function Philosophy() {
         <div className="heading flex items-center gap-3">
           <div
             ref={lineRef}
-            className="hidden md:block w-10 h-[3px] bg-black"></div>
-          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide flex flex-wrap overflow-hidden">
+            className="hidden md:block w-10 h-[3px] mt-2.5 lg:mt-0 2xl:mt-4 bg-black"></div>
+          <h1 className="font-heading uppercase text-xl md:text-2xl 2xl:text-4xl tracking-wide leading-7 md:leading-6 lg:leading-6 flex flex-wrap overflow-hidden">
             {text.split(" ").map((word, i) => (
               <span key={i} className="mr-2 flex overflow-hidden">
                 {word.split("").map((char, j) => (
