@@ -199,7 +199,7 @@ export const Header = () => {
           Global Project
         </Link>
         <Link
-          to="/projects"
+          to="/gallery"
           ref={(el) => (mobLinksRef.current[2] = el)}
           onClick={() => setIsOpen(false)}
           className="">
